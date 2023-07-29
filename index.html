@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woodworking Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.15/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!-- social media icons-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 right-0 bg-gray-800 py-2 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white font-bold text-lg">Woodworking Portfolio</h1>
+        <nav>
+          <ul class="flex">
+            <li class="ml-4"><a href="#home" class="text-white">Home</a></li>
+            <li class="ml-4"><a href="#about" class="text-white">About</a></li>
+            <li class="ml-4"><a href="#portfolio" class="text-white">Portfolio</a></li>
+            <li class="ml-4"><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="parallax-bg h-screen" id="home" style="background-image: url('cabin.jpg')">
+        <div class="h-screen flex flex-col justify-center items-center text-white">
+          <h2 class="text-2xl text-center font-bold mb-8" style="color:white">Welcome to my woodworking portfolio</h2>
+          <p class="text-center text-gray-600" style="color:white;">Over 15 years experience creating new building things from cabins to dining room sets</p>
+        </div>
+      </div>
+
+      <div class="bg-white py-12" id="about">
+        <div class="container mx-auto">
+          <h2 class="text-2xl text-center font-bold mb-8" style="color:black;">About Me</h2>
+          <p class="text-center text-gray-600">My Name is Terry and I have worked as a Carpenter and Joiner for 15 years</p>
+          <p class="text-center text-gray-600">I started off learning from my grandfather who taught me using classic tools he had since a child</p>
+          <p class="text-center text-gray-600">After he had taught me everything he knew and he retired, I took over the family buisness which has been around since 1930</p>
+          <p class="text-center text-gray-600">To see some more of our woodworking projects please check our social media below</p>
+          <div class="media">   
+          <a href="www.facebook.com" class="fa fa-facebook"></a>
+          <a href="www.instagram.com" class="fa fa-instagram"></a>
+          <a href="www.youtube.com" class="fa fa-youtube"></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="parallax-bg h-screen" style="background-image: url('woodwork.jpg')" id="portfolio">
+        <div class="h-screen flex flex-col justify-center items-center text-white">
+          <h2 class="text-2xl text-center font-bold mb-8" style="color:white;">My Latest Projects</h2>
+          <div class = "content">
+            <img src= "chest of draws.jpg">
+            <img src="Pet bowl.jpg">
+            <img src="Wood-Bench.jpg">
+
+          </div>
+           </div>
+            <!-- formspree contact form-->
+            <div class="bg-white py-12" id="contact">
+              <div class="container mx-auto">
+                <h2 class="text-2xl text-center font-bold mb-8">Contact Me</h2>
+                <div class ="contact">
+                  <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgebnlow" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name">Full Name:</label>
+                      <input type="text" name="name" id="full-name" placeholder="Ente your name" required="">
+                      <br>
+                      <label for="email-address">Email Address:</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                      <br>
+                      <label for="telephone">Telephone Number:</label>
+                      <input type="telephone" name="telephone" id="telephone" placeholder="(44) 555-5555" required="">
+                      <br>
+                      <textarea rows="6" name="message" id="message" placeholder="  Enter your message here" required=""></textarea>
+                      <br>
+                      <input type="hidden" name="_subject" id="email-subject" value="Submit">
+                    </fieldset>
+                    <input type="submit" value="Send">
+                  </form>
+              </div>
+            </div>
+          </div>
+          </main>
+
+
+
+

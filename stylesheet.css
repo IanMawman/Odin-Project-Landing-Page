@@ -1,0 +1,67 @@
+/* parllax scrolling effect */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .media{
+
+  text-align: center;
+
+} 
+  .fa { /* styling social media buttons */
+   padding: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 50%;
+}
+  .fa:hover {
+    opacity: 0.7;
+}
+/* styles the form */
+input[type=email], 
+input[type=password], 
+input[type=text], 
+input[type=submit],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+input[type="submit"] { 
+  cursor: pointer
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+.content{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+/* puts images in a row in the content div */
+
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    opacity: .5;
+    transition: .3s;
+    cursor: pointer;
+    margin: 0px 10px 30px 20px; /* puts spaces between images */
+  }
+  img:hover {
+    opacity: 2;
+  }
